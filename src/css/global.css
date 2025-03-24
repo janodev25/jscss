@@ -1,0 +1,146 @@
+.w-nav-link.w--current {
+  color: #C68D08;
+}
+
+.w-dropdown-link.w--current {
+  color: #C68D08;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.nav-bar-btn-open.w-nav-button .nav-bar-icon-open {
+  display: block;
+}
+
+.nav-bar-btn-open.w-nav-button .nav-bar-icon-close {
+  display: none;
+}
+
+.nav-bar-btn-open.w-nav-button.w--open .nav-bar-icon-open {
+  display: none;
+}
+
+.nav-bar-btn-open.w-nav-button.w--open .nav-bar-icon-close {
+  display: block;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  /* Desactiva el scroll */
+}
+
+.scroll-container {
+  cursor: grab;
+  user-select: none;
+}
+
+.truncate-multiline {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 479px) {
+  .new-hero-card:hover .news-card-title {
+    border: 1px solid #c68d08 !important;
+    border-left: none !important;
+  }
+}
+
+body:has(.w-nav-button.w--open) {
+  overflow: hidden;
+}
+
+#formulario input.w-input {
+  border-radius: 0 !important;
+}
+
+.blog_post_content blockquote {
+  font-size: 16px;
+}
+
+.blog_post_content a {
+  color: #3a70e2;
+}
+
+.blog_post_content li {
+  margin-bottom: 8px;
+}
+
+.scroll-to-section::before {
+  display: block;
+  content: " ";
+  margin-top: -104px;
+  height: 104px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.w-nav-menu .itemnavbar:has(a.w--current) img {
+  filter: brightness(0) saturate(100%) invert(50%) sepia(94%) saturate(1127%) hue-rotate(6deg) brightness(90%) contrast(96%);
+}
+
+.w-nav-menu .itemnavbar:hover img {
+  filter: brightness(0) saturate(100%) invert(50%) sepia(94%) saturate(1127%) hue-rotate(6deg) brightness(90%) contrast(96%);
+}
+
+
+.text-idioma::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+
+.w-locales-item {
+  width: 100%;
+
+}
+
+.text-idioma,
+.w-locales-item a {
+  color: white;
+  color: transparent !;
+  position: relative;
+  display: block;
+}
+
+/* Bandera de México */
+.text-idioma[data-idioma="es-MX"]::before,
+.w-locales-item a[data-idioma="es-MX"]::before {
+  background-image: url('https://cdn.prod.website-files.com/663bdacde75aadf5e5b666da/6790298cbff2ebc3ea19a494_icon-es.png');
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* Bandera de Estados Unidos */
+.text-idioma[data-idioma="en"]::before,
+.w-locales-item a[data-idioma="en"]::before {
+  background-image: url('https://cdn.prod.website-files.com/663bdacde75aadf5e5b666da/6790298ca0005d144f488526_icon-en.png');
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}

@@ -1,0 +1,21 @@
+{
+	"name": "bp-assets",
+	"version": "1.0.0",
+	"description": "js and css",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"serve": "serve",
+		"build": "esbuild src/index.js --bundle --minify --sourcemap --outfile=dist/index.js",
+		"build-all": "node builder.js"
+	},
+	"author": "jano",
+	"license": "ISC",
+	"devDependencies": {
+		"cssnano": "^7.0.6",
+		"esbuild": "0.25.1",
+		"postcss": "^8.5.3",
+		"postcss-cli": "^11.0.1",
+		"serve": "^14.2.4"
+	}
+}
